@@ -4,4 +4,4 @@
 Android Application uses HttpURLConnection with AsyncTask on MainActivity to parse JSON from Edgar API.
 Financial Data are made available for viewing.
 
-<img src="HttpURLConnection_screenshot.jpg">
+<center><span style="width:20%"><img src="HttpURLConnection_screenshot.jpg"></span></center>
