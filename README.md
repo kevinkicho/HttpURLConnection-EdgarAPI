@@ -5,4 +5,4 @@ Android Application uses HttpURLConnection with AsyncTask on MainActivity to par
 Financial Data are made available for viewing.
 <p><p>
 
-<div><img src="HttpURLConnection_screenshot.jpg" width="20%"></div>
+<center><div><img src="HttpURLConnection_screenshot.jpg" width="60%"></div></center>
