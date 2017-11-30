@@ -15,7 +15,7 @@ Financial Data are made available for viewing.
   <p></p>
   <h2>Edgar API</h2>
   <p>Edgar API&trade; provides outlet for company financial data for educational, non commercial use. HttpURLConnection activity ought to be conducted in non-main thread, for it shall cause NetworkException. </p>
-<img src="EDGAR_API_img.png" style="width:40%"/>
+<img src="EDGAR_API_img.PNG" style="width:40%"/>
 
   <h2>AsyncTask, doInBackground(), onPostExecute()</h2>
   <p>AsyncTask methods are comprised of doInBackground() and onPostExecute(). URLConnection is established with <code>.setRequestMethod("GET")</code>. This program is configured to process Json output from "v2-Core Financials YTD".  Upon Connection, InputStreamReader, StringBuffer process data and output as String.</p>
