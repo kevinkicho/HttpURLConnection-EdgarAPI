@@ -9,9 +9,9 @@ Financial Data are made available for viewing.
 
 <h2>HttpURLConnection</h2>
 <p>HttpURLConnection establishes connection with API, and data on the web are accessible with Get method.  <br>
-  <code>urlConnection = (HttpURLConnection) url.openConnection();
-    urlConnection.setRequestMethod("GET");
-    urlConnection.connect();</code>
+  <code>urlConnection = (HttpURLConnection) url.openConnection();</code><br>
+   <code>urlConnection.setRequestMethod("GET");</code><br>
+    <code>urlConnection.connect();</code><br>
   <p></p>
   <h2>Edgar API</h2>
   <p>Edgar API&trade; provides outlet for company financial data for educational, non commercial use. HttpURLConnection activity ought to be conducted in non-main thread, for it shall cause NetworkException. </p>
@@ -19,10 +19,15 @@ Financial Data are made available for viewing.
 
   <h2>AsyncTask, doInBackground(), onPostExecute()</h2>
   <p>AsyncTask methods are doInBackground() and onPostExecute().
-  <code>HttpURLConnection urlConnection = null;</br>BufferedReader reader = null;</br>String jsonStr = null;</code>
+  <code>HttpURLConnection urlConnection = null;</code><br>
+  <code>BufferedReader reader = null;</code></br>
+  <code>String jsonStr = null;</code><br>
   <p></p>
   <p>InputStreamReader, StringBuffer processed jsonStr is parsed as Json. This program is configured to process Json output from v2-Core Financials YTD.  Return values resulting from unctions through doInBackground() gets passed to onPostExecute().</p>
   
   <h2>jsonParser</h2>
   <p>jsonParser constructs Json object from String. JsonObjects, JsonArrays, JsonElements comprise json tree.</p>
-  <code>JsonParser parser = new JsonParser();</br>JsonObject o = parser.parse(jsonStr).getAsJsonObjet();</br>JsonObject result = o.getAsJsonObject("result");</br>JsonArray rows = result.getAsJsonArray("rows");</code>
+  <code>JsonParser parser = new JsonParser();</code></br>
+  <code>JsonObject o = parser.parse(jsonStr).getAsJsonObjet();</code></br>
+  <code>JsonObject result = o.getAsJsonObject("result");<code></br>
+  <code>JsonArray rows = result.getAsJsonArray("rows");</code></br>
