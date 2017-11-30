@@ -18,7 +18,7 @@ Financial Data are made available for viewing.
 <img src="/EDGAR_API_img.png" style="width:40%"/>
 
   <h2>AsyncTask, doInBackground(), onPostExecute()</h2>
-  <p>AsyncTask methods are doInBackground() and onPostExecute().
+  <p>AsyncTask methods are doInBackground() and onPostExecute().</p>
   <code>HttpURLConnection urlConnection = null;</code><br>
   <code>BufferedReader reader = null;</code></br>
   <code>String jsonStr = null;</code><br>
