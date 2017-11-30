@@ -9,7 +9,9 @@ Financial Data are made available for viewing.
 
 <h2>HttpURLConnection</h2>
 <p>HttpURLConnection establishes connection with API, and data on the web are accessible with Get method.  
-  <code>urlConnection = (HttpURLConnection) url.openConnection();</br>urlConnection.setRequestMethod("GET");</br>urlConnection.connect();</code>
+  <code>urlConnection = (HttpURLConnection) url.openConnection();
+    urlConnection.setRequestMethod("GET");
+    urlConnection.connect();</code>
   <p></p>
   <h2>Edgar API</h2>
   <p>Edgar API&trade; provides outlet for company financial data for educational, non commercial use. HttpURLConnection activity ought to be conducted in non-main thread, for it shall cause NetworkException. </p>
