@@ -18,12 +18,9 @@ Financial Data are made available for viewing.
 <img src="/EDGAR_API_img.png" style="width:40%"/>
 
   <h2>AsyncTask, doInBackground(), onPostExecute()</h2>
-  <p>AsyncTask methods are doInBackground() and onPostExecute().</p>
-  <code>HttpURLConnection urlConnection = null;</code><br>
-  <code>BufferedReader reader = null;</code></br>
-  <code>String jsonStr = null;</code><br>
+  <p>AsyncTask methods are comprised of doInBackground() and onPostExecute(). URLConnection is established with <code>.setRequestMethod("GET")</code>. This program is configured to process Json output from "v2-Core Financials YTD".  Upon Connection, InputStreamReader, StringBuffer process data and output as String.</p>
   <p></p>
-  <p>InputStreamReader, StringBuffer processed jsonStr is parsed as Json. This program is configured to process Json output from v2-Core Financials YTD.  Return values resulting from unctions through doInBackground() gets passed to onPostExecute().</p>
+  <p>Processed jsonStr is parsed as Json. Return values resulting from actions through doInBackground() gets passed to onPostExecute().</p>
   
   <h2>jsonParser</h2>
   <p>jsonParser constructs Json object from String. JsonObjects, JsonArrays, JsonElements comprise json tree.</p>
