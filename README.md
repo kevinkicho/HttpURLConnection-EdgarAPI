@@ -27,7 +27,7 @@ Financial Data are made available for viewing.
   
   <h2>jsonParser</h2>
   <p>jsonParser constructs Json object from String. JsonObjects, JsonArrays, JsonElements comprise json tree.</p>
-  <code>JsonParser parser = new JsonParser();</code></br>
-  <code>JsonObject o = parser.parse(jsonStr).getAsJsonObjet();</code></br>
-  <code>JsonObject result = o.getAsJsonObject("result");<code></br>
-  <code>JsonArray rows = result.getAsJsonArray("rows");</code></br>
+  <code>JsonParser parser = new JsonParser();</code><br>
+  <code>JsonObject o = parser.parse(jsonStr).getAsJsonObjet();</code><br>
+  <code>JsonObject result = o.getAsJsonObject("result");<code>/br>
+  <code>JsonArray rows = result.getAsJsonArray("rows");</code><br>
