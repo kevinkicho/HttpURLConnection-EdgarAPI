@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 String stock_symbol = editText.getText().toString();
                 URL url = new URL("http://edgaronline.api.mashery.com/v2/corefinancials/ytd?fields=BalanceSheetConsolidated&primarysymbols=" + stock_symbol + "&activecompanies=false&deleted=false&sortby=primarysymbol+asc&debug=false&appkey=" + API_KEY);
 
-                // Create the request to OpenWeatherMap, and open the connection
+                // Open the connection
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
                 urlConnection.connect();
