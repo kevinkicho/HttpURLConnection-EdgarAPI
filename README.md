@@ -22,7 +22,7 @@ Financial Data are made available for viewing.
   <p></p>
   <p>Processed jsonStr is parsed as Json. Return values resulting from actions through doInBackground() gets passed to onPostExecute().</p>
   
-  <h2>jsonParser</h2>
+  <h2>Gson</h2>
   <p>jsonParser constructs Json object from String. JsonObjects, JsonArrays, JsonElements comprise json tree.</p>
   <code>JsonParser parser = new JsonParser();</code><br>
   <code>JsonObject o = parser.parse(jsonStr).getAsJsonObjet();</code><br>
